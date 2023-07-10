@@ -189,7 +189,7 @@ main {
     justify-content: center;
     align-items: center;
     gap:30px;
-    flex-wrap: wrap;
+    
 
 }
 
@@ -266,7 +266,7 @@ main {
 	cursor:pointer;
 }
 
-@media (max-width: 768px){
+@media (max-width: 1200px){
 	.link{
 		flex-direction: column;
 	}
@@ -276,3 +276,10 @@ main {
 		height: auto;
 		align-items: flex-start;
 	}
+
+	.info-cards{
+		flex-wrap: wrap;
+
+	}
+}
+
