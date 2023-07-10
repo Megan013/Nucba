@@ -10,10 +10,7 @@
 
 body {
 
-	background: #E55D87;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to bottom, #5FC3E4, #E55D87);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to bottom, #5FC3E4, #E55D87); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+	background: #949eff; 
 
 }
 
@@ -23,27 +20,23 @@ header{
 	align-items: center;	
 	height: 90px;
 	border-style: outset;
-	background: #EECDA3;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #EF629F, #EECDA3);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #EF629F, #EECDA3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #FFC0CB;
+	flex-wrap: wrap;
 
 }
 
-.header-img {
-	margin-left: 30px;
-}
 
 .logo {
-
 	width: 80px;
 	height: auto;
 	border-radius: 25px;
   	border-style: inset;
+  	margin-left: 30px;
 
 }
 
 li{
-	display: inline-block;
+	
 	padding: 20px;
 	color:black;
 	font-size: 110%;
@@ -57,7 +50,6 @@ li:hover {
  background: #4CA1AF;  /* fallback for old browsers */
  background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF);  /* Chrome 10-25, Safari 5.1-6 */
  background: linear-gradient(to right, #C4E0E5, #4CA1AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
  border-radius: 15px;
  border-style: inset;
 
@@ -68,6 +60,7 @@ ul{
 
 	list-style-type: none;
 	margin-right: 50px;
+	display: flex;
 }
 
 
@@ -91,9 +84,8 @@ main {
   align-items: center;
   border-radius: 25px;
   border-style: inset;
-  background: #EECDA3;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #EF629F, #EECDA3);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #EF629F, #EECDA3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #FFC0CB;
+  flex-wrap: wrap;
 
 }
 
@@ -102,6 +94,7 @@ main {
   flex-direction: column;
   gap: 20px;
   width: 50%;
+  	flex-wrap: wrap;
 
 }
 
@@ -161,9 +154,125 @@ main {
   	max-width: 1200px;
   	border-style: inset;
   	border-radius: 25px;
-  	background: #EECDA3;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #EF629F, #EECDA3);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #EF629F, #EECDA3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  	background: #FFC0CB;
+  	text-align: center;
 
 
 }
+
+#cards {
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 70px;
+  	max-width: 1200px;
+  	border-style: inset;
+  	border-radius: 25px;
+  	background: #FFC0CB;
+  	flex-wrap: wrap;
+
+}
+
+.cards {
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    flex-wrap: wrap;
+}
+
+.info-cards {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    flex-wrap: wrap;
+
+}
+
+.ima-card {
+	width:100px;
+}
+
+.div-cards{
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    border-style: inset;
+  	border-radius: 25px;
+  	padding: 40px;
+  	background: #4CA1AF;  /* fallback for old browsers */
+ 	background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF);  /* Chrome 10-25, Safari 5.1-6 */
+ 	background: linear-gradient(to right, #C4E0E5, #4CA1AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 	height: 400px;
+ 	height: 400px;
+
+}
+
+
+.title-cards{
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+    font-weight: bold;
+}
+
+.title-cards p{
+	color: #696969;
+	font-weight: bold;
+}
+
+.div-cards p{
+	text-align: justify;
+}
+
+#footer {
+	display: flex;
+    padding: 40px;
+  	max-width: 1200px;
+  	border-style: inset;
+  	border-radius: 25px;
+  	background: #FFC0CB;
+	justify-content: space-between;
+	margin: 40px;
+	margin-left: 70px;
+	flex-wrap: wrap;
+	}
+
+
+.footer-info {
+	display: flex;
+	flex-direction: column;
+	gap:40px;
+
+}
+
+
+.pc {
+	width: 30%;
+	border-style: inset;
+  	border-radius: 25px;
+}
+
+.icono-redes {
+	width: 30px;
+	cursor:pointer;
+}
+
+@media (max-width: 768px){
+	.link{
+		flex-direction: column;
+	}
+
+	header{
+		flex-direction: column;
+		height: auto;
+		align-items: flex-start;
+	}
